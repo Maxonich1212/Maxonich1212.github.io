@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 853">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0" stop-color="#c2b4a4"/>
+      <stop offset="1" stop-color="#a07a60"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="853" fill="url(#bg)"/>
+  <g fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M284 268 L356 268 L366 600 L274 600 Z"/>
+    <path d="M320 268 L302 300 M320 268 L338 300 M320 300 L320 588"/>
+    <circle cx="320" cy="360" r="5"/><circle cx="320" cy="420" r="5"/><circle cx="320" cy="480" r="5"/>
+  </g>
+  <text x="320" y="712" text-anchor="middle" font-family="Georgia, serif" font-size="44" fill="rgba(255,255,255,0.96)">Пальто</text>
+  <text x="320" y="748" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" letter-spacing="5" fill="rgba(255,255,255,0.55)">ОБРАЗЕЦ · 2</text>
+</svg>

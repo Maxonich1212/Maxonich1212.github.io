@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 853">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0" stop-color="#e3d2c4"/>
+      <stop offset="1" stop-color="#d2a88e"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="853" fill="url(#bg)"/>
+  <g fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M300 302 L308 334 M340 302 L332 334"/>
+    <path d="M296 334 L344 334 L350 432 L326 432 L326 560 L314 560 L314 432 L290 432 Z"/>
+    <path d="M296 380 L344 380"/>
+  </g>
+  <text x="320" y="712" text-anchor="middle" font-family="Georgia, serif" font-size="44" fill="rgba(255,255,255,0.96)">Детский костюм</text>
+  <text x="320" y="748" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" letter-spacing="5" fill="rgba(255,255,255,0.55)">ОБРАЗЕЦ</text>
+</svg>

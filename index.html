@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ↓↓↓ ЗАГОЛОВОК ВКЛАДКИ В БРАУЗЕРЕ ↓↓↓ -->
+  <title>Наталия Ларионова — модельер-конструктор</title>
+  <meta name="description" content="Ларионова Наталия Александровна — модельер-конструктор с опытом более 25 лет. Авторские лекала и конструкции детской и взрослой одежды по вашему запросу." />
+  <meta name="theme-color" content="#a6745a" />
+
+  <!-- Иконка сайта (во вкладке браузера) -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+  <!-- Красивое превью при отправке ссылки в WhatsApp / Telegram / соцсети -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Наталия Ларионова — модельер-конструктор" />
+  <meta property="og:description" content="Авторские лекала и конструкции детской и взрослой одежды по вашему запросу. Опыт более 25 лет." />
+  <meta property="og:locale" content="ru_RU" />
+  <!-- Чтобы в превью ссылки появилась КАРТИНКА: положите фото 1200x630 px
+       в images/og.jpg и добавьте сюда строку:
+       meta property="og:image" content="images/og.jpg" (в угловых скобках) -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Manrope:wght@200;300;400;500;600;700&family=Marck+Script&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Тонкая полоска прогресса прокрутки сверху -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ШАПКА / МЕНЮ -->
+  <header class="site-header" id="header">
+    <a href="#top" class="logo">Наталия&nbsp;Ларионова</a>
+    <nav class="nav" id="nav">
+      <a href="#about">Обо&nbsp;мне</a>
+      <a href="#works">Работы</a>
+      <a href="#services">Услуги</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+    <!-- Кнопка-бургер (видна только на телефоне) -->
+    <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Основной контент — все блоки одной ширины, в общем контейнере -->
+  <main class="stack">
+
+    <!-- ГЛАВНЫЙ ЭКРАН -->
+    <section class="hero" id="top">
+      <div class="hero__bg"></div>
+      <div class="hero__inner">
+        <p class="hero__eyebrow" data-reveal><span class="hero__rule"></span>Дизайнер-конструктор · авторские лекала</p>
+        <h1 class="hero__title">
+          <span class="line">
+            <span class="word" data-reveal data-delay="1">Создаю</span>
+            <span class="word" data-reveal data-delay="2">лекала,</span>
+          </span>
+          <span class="line">
+            <span class="word" data-reveal data-delay="3">с</span>
+            <span class="word" data-reveal data-delay="4">которых</span>
+            <span class="word" data-reveal data-delay="5">начинается</span>
+            <span class="word hero__accent" data-reveal data-delay="6"><em>одежда</em></span>
+          </span>
+        </h1>
+        <p class="hero__text" data-reveal data-delay="7">
+          Разрабатываю конструкции и лекала любой сложности — детские и взрослые,
+          по вашему эскизу, фотографии или идее. Точный крой и продуманная посадка,
+          готовые к&nbsp;производству.
+        </p>
+        <div class="hero__actions" data-reveal data-delay="8">
+          <a href="#works" class="btn">Смотреть работы <span class="btn__arrow" aria-hidden="true">→</span></a>
+          <a href="#contact" class="btn btn--ghost">Связаться</a>
+        </div>
+      </div>
+      <div class="hero__scroll" data-reveal data-delay="8">
+        <span></span>
+      </div>
+    </section>
+
+    <!-- ОБО МНЕ -->
+    <section class="panel about" id="about">
+      <div class="about__photo" data-reveal data-parallax="0.06">
+        <img src="images/photo_my_about.JPG" alt="Наталия Александровна Ларионова — модельер-конструктор" />
+      </div>
+      <div class="about__text">
+        <p class="section-num" data-reveal>01</p>
+        <h2 class="section-title" data-reveal data-delay="1">Обо мне</h2>
+        <p class="about__lead" data-reveal data-delay="2">
+          Меня зовут <strong>Ларионова Наталия Александровна</strong> —
+          модельер-конструктор с опытом более&nbsp;25&nbsp;лет.
+        </p>
+        <p class="about__body" data-reveal data-delay="3">
+          Разрабатываю конструкции и лекала любой сложности — от детской одежды
+          до взрослой, по эскизу, фотографии или вашей идее.
+          Люблю точный крой, аккуратную посадку и внимание к каждой детали.
+        </p>
+        <ul class="facts">
+          <li data-reveal data-delay="4"><span data-count="25" data-suffix="+">0</span> лет&nbsp;опыта</li>
+          <li data-reveal data-delay="5"><span data-count="500" data-suffix="+">0</span> готовых&nbsp;изделий</li>
+          <li data-reveal data-delay="6"><span data-count="100" data-suffix="%">0</span> ручная&nbsp;работа</li>
+        </ul>
+        <p class="about__sign" data-reveal data-delay="7">Наталия</p>
+      </div>
+    </section>
+
+    <!-- ГАЛЕРЕЯ РАБОТ -->
+    <section class="panel works" id="works">
+      <p class="section-num section-num--center" data-reveal>02</p>
+      <h2 class="section-title section-title--center" data-reveal data-delay="1">Работы</h2>
+      <p class="section-subtitle" data-reveal data-delay="2">Несколько примеров. Нажмите на фото, чтобы рассмотреть.</p>
+
+      <!-- Фильтр категорий -->
+      <div class="filter" id="filter" data-reveal data-delay="3">
+        <span class="filter__pill" id="filterPill" aria-hidden="true"></span>
+        <button class="filter__btn is-active" data-filter="all">Все</button>
+        <button class="filter__btn" data-filter="kids">Детская</button>
+        <button class="filter__btn" data-filter="adult">Взрослая</button>
+      </div>
+
+      <div class="gallery">
+        <!-- КАЖДАЯ КАРТОЧКА = ОДНО ИЗДЕЛИЕ.
+             • data-category="kids" (детская) или "adult" (взрослая)
+             • data-title — подпись изделия
+             • data-photos — список фото этого изделия через запятую (первое = обложка)
+             Сейчас стоят ДЕМО-эскизы из images/demo/. Замените на свои фото из images/. -->
+
+        <!-- ДЕМО-карточки (заменятся на настоящие фото) -->
+        <figure class="card" data-scroll-scale data-category="adult"
+                data-title="Вечернее платье"
+                data-photos="images/demo/vzr_plate_1.svg,images/demo/vzr_plate_2.svg">
+          <div class="card__media">
+            <img loading="lazy" decoding="async" src="images/demo/vzr_plate_1.svg" alt="Вечернее платье" />
+            <div class="card__overlay">
+              <span class="card__cta">
+                <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="21" y2="21"/></svg>
+                Смотреть
+              </span>
+            </div>
+            <span class="card__count">2 фото</span>
+          </div>
+          <figcaption>Вечернее платье</figcaption>
+        </figure>
+
+        <figure class="card" data-scroll-scale data-category="adult"
+                data-title="Пальто, шерсть"
+                data-photos="images/demo/vzr_palto_1.svg,images/demo/vzr_palto_2.svg">
+          <div class="card__media">
+            <img loading="lazy" decoding="async" src="images/demo/vzr_palto_1.svg" alt="Пальто, шерсть" />
+            <div class="card__overlay">
+              <span class="card__cta">
+                <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="21" y2="21"/></svg>
+                Смотреть
+              </span>
+            </div>
+            <span class="card__count">2 фото</span>
+          </div>
+          <figcaption>Пальто, шерсть</figcaption>
+        </figure>
+
+        <figure class="card" data-scroll-scale data-category="adult"
+                data-title="Костюм на заказ"
+                data-photos="images/demo/vzr_kostyum_1.svg">
+          <div class="card__media">
+            <img loading="lazy" decoding="async" src="images/demo/vzr_kostyum_1.svg" alt="Костюм на заказ" />
+            <div class="card__overlay">
+              <span class="card__cta">
+                <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="21" y2="21"/></svg>
+                Смотреть
+              </span>
+            </div>
+          </div>
+          <figcaption>Костюм на заказ</figcaption>
+        </figure>
+
+        <figure class="card" data-scroll-scale data-category="kids"
+                data-title="Детское платье"
+                data-photos="images/demo/det_plate_1.svg,images/demo/det_plate_2.svg">
+          <div class="card__media">
+            <img loading="lazy" decoding="async" src="images/demo/det_plate_1.svg" alt="Детское платье" />
+            <div class="card__overlay">
+              <span class="card__cta">
+                <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="21" y2="21"/></svg>
+                Смотреть
+              </span>
+            </div>
+            <span class="card__count">2 фото</span>
+          </div>
+          <figcaption>Детское платье</figcaption>
+        </figure>
+
+        <figure class="card" data-scroll-scale data-category="kids"
+                data-title="Детский костюм"
+                data-photos="images/demo/det_kostyum_1.svg">
+          <div class="card__media">
+            <img loading="lazy" decoding="async" src="images/demo/det_kostyum_1.svg" alt="Детский костюм" />
+            <div class="card__overlay">
+              <span class="card__cta">
+                <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="21" y2="21"/></svg>
+                Смотреть
+              </span>
+            </div>
+          </div>
+          <figcaption>Детский костюм</figcaption>
+        </figure>
+
+        <figure class="card" data-scroll-scale data-category="adult"
+                data-title="Свадебное платье"
+                data-photos="images/demo/vzr_svadebnoe_1.svg">
+          <div class="card__media">
+            <img loading="lazy" decoding="async" src="images/demo/vzr_svadebnoe_1.svg" alt="Свадебное платье" />
+            <div class="card__overlay">
+              <span class="card__cta">
+                <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="21" y2="21"/></svg>
+                Смотреть
+              </span>
+            </div>
+          </div>
+          <figcaption>Свадебное платье</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- УСЛУГИ -->
+    <section class="panel services" id="services">
+      <p class="section-num section-num--center" data-reveal>03</p>
+      <h2 class="section-title section-title--center" data-reveal data-delay="1">Услуги</h2>
+      <p class="section-subtitle" data-reveal data-delay="2">Нажмите на услугу, чтобы узнать подробнее.</p>
+
+      <div class="services__list">
+
+        <div class="service" data-reveal data-delay="1">
+          <button class="service__head" aria-expanded="false">
+            <span class="service__no">01</span>
+            <span class="service__title">Детская одежда</span>
+            <span class="service__toggle" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
+          </button>
+          <div class="service__body">
+            <div class="service__inner">
+              <p class="service__lead">Конструкции и лекала для детской одежды — с учётом роста, пропорций и свободы движений ребёнка.</p>
+              <ul class="service__points">
+                <li>Лекала платьев, костюмов, комбинезонов и нарядных комплектов</li>
+                <li>Школьная и праздничная форма</li>
+                <li>Комфортная посадка и припуски на рост</li>
+                <li>Полный размерный ряд (градация)</li>
+                <li>По эскизу, фотографии или вашей идее</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="service" data-reveal data-delay="2">
+          <button class="service__head" aria-expanded="false">
+            <span class="service__no">02</span>
+            <span class="service__title">Взрослая одежда</span>
+            <span class="service__toggle" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
+          </button>
+          <div class="service__body">
+            <div class="service__inner">
+              <p class="service__lead">Лекала и конструкции для взрослой одежды — точная посадка и чистый крой в каждой модели.</p>
+              <ul class="service__points">
+                <li>Лекала платьев, пальто, костюмов, блуз, юбок, брюк</li>
+                <li>Вечерние и повседневные модели</li>
+                <li>Безупречная посадка по фигуре</li>
+                <li>Базовые и модельные конструкции</li>
+                <li>Размерная градация под ваш ряд</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="service" data-reveal data-delay="3">
+          <button class="service__head" aria-expanded="false">
+            <span class="service__no">03</span>
+            <span class="service__title">Лекала по запросу</span>
+            <span class="service__toggle" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
+          </button>
+          <div class="service__body">
+            <div class="service__inner">
+              <p class="service__lead">Профессиональная конструкция — основа любой красивой вещи. Построю лекала по вашему эскизу, фотографии или готовому образцу.</p>
+              <ul class="service__points">
+                <li>Базовые и модельные лекала любой сложности</li>
+                <li>Построение по эскизу, фото или образцу</li>
+                <li>Градация по размерам (полный размерный ряд)</li>
+                <li>Лекала, готовые к запуску в производство</li>
+                <li>Подробные пояснения и раскладка</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="service" data-reveal data-delay="4">
+          <button class="service__head" aria-expanded="false">
+            <span class="service__no">04</span>
+            <span class="service__title">Индивидуальная работа над заказом</span>
+            <span class="service__toggle" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
+          </button>
+          <div class="service__body">
+            <div class="service__inner">
+              <p class="service__lead">Беру в работу разные форматы — от одной модели до целой коллекции — и веду проект лично, от идеи до готовых лекал.</p>
+              <ul class="service__points">
+                <li>Единичная модель, капсула или коллекция</li>
+                <li>Работа по эскизу, фотографии, образцу или устной идее</li>
+                <li>Личное сопровождение на каждом этапе</li>
+                <li>Консультации по конструкции и посадке</li>
+                <li>Готовые лекала и техническая документация</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- КОНТАКТЫ -->
+    <section class="panel contact" id="contact">
+      <p class="section-num section-num--center" data-reveal>04</p>
+      <h2 class="section-title section-title--center" data-reveal data-delay="1">Связаться со мной</h2>
+      <p class="section-subtitle" data-reveal data-delay="2">Расскажите о вашей идее — обсудим лекала и детали заказа. Отвечаю в течение дня.</p>
+
+      <div class="contact__actions" data-reveal data-delay="3">
+        <a class="contact__btn" href="https://wa.me/79110922080" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8z"/></svg>
+          <span>Написать в WhatsApp</span>
+        </a>
+        <a class="contact__btn" href="https://t.me/+79110922080" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+          <span>Написать в Telegram</span>
+        </a>
+        <a class="contact__btn contact__btn--ghost" href="tel:+79110922080">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>+7 (911) 092-20-80</span>
+        </a>
+        <a class="contact__btn contact__btn--ghost" href="mailto:natali_lg79@mail.ru">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+          <span>natali_lg79@mail.ru</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Ларионова Наталия Александровна · модельер-конструктор</p>
+  </footer>
+
+  <!-- Кнопка «наверх» -->
+  <button class="to-top" id="toTop" aria-label="Наверх">↑</button>
+
+  <!-- ОКНО ПРОСМОТРА ФОТО (открывается по клику) -->
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lightbox__close" id="lightboxClose" aria-label="Закрыть">×</button>
+    <button class="lightbox__nav lightbox__prev" id="lightboxPrev" aria-label="Назад">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 5 8 12 15 19"/></svg>
+    </button>
+    <div class="lightbox__content" id="lightboxContent"></div>
+    <button class="lightbox__nav lightbox__next" id="lightboxNext" aria-label="Вперёд">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 5 16 12 9 19"/></svg>
+    </button>
+    <div class="lightbox__caption" id="lightboxCaption"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

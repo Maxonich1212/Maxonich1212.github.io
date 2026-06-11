@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 853">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0" stop-color="#b6a58f"/>
+      <stop offset="1" stop-color="#94705a"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="853" fill="url(#bg)"/>
+  <g fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M290 270 L350 270 L362 296 L352 588 L288 588 L278 296 Z"/>
+    <path d="M320 272 L300 300 L318 424 M320 272 L340 300 L322 424"/>
+    <circle cx="320" cy="436" r="4"/><circle cx="320" cy="470" r="4"/>
+    <path d="M298 506 L316 506 M324 506 L342 506"/>
+  </g>
+  <text x="320" y="712" text-anchor="middle" font-family="Georgia, serif" font-size="44" fill="rgba(255,255,255,0.96)">Костюм</text>
+  <text x="320" y="748" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" letter-spacing="5" fill="rgba(255,255,255,0.55)">ОБРАЗЕЦ</text>
+</svg>

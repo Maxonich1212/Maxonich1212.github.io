@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 853">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0" stop-color="#e1cebf"/>
+      <stop offset="1" stop-color="#cf9f85"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="853" fill="url(#bg)"/>
+  <g fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M308 276 L332 276 L350 296 L338 354 L376 556 L264 556 L302 354 L290 296 Z"/>
+    <path d="M309 278 Q320 292 331 278"/>
+    <path d="M302 354 L338 354"/>
+    <circle cx="320" cy="392" r="6"/>
+  </g>
+  <text x="320" y="712" text-anchor="middle" font-family="Georgia, serif" font-size="44" fill="rgba(255,255,255,0.96)">Детское платье</text>
+  <text x="320" y="748" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" letter-spacing="5" fill="rgba(255,255,255,0.55)">ОБРАЗЕЦ · 1</text>
+</svg>
