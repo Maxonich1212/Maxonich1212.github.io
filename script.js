@@ -142,21 +142,60 @@ function movePill() {
   filterPill.style.transform = "translateX(" + active.offsetLeft + "px)";
 }
 
+// Сколько работ показывать в свёрнутом виде (остальные — под кнопкой «Показать все»)
+const GALLERY_LIMIT = 4;
+let galleryExpanded = false;
+let currentFilter = "all";
+const galleryMore = document.getElementById("galleryMore");
+
+function applyGallery() {
+  let matchIndex = 0;
+  cards.forEach((card) => {
+    const match = currentFilter === "all" || card.dataset.category === currentFilter;
+    if (!match) {
+      card.classList.add("is-hidden");
+      card.classList.remove("is-clipped");
+      return;
+    }
+    card.classList.remove("is-hidden");
+    // в свёрнутом виде прячем всё, что после лимита
+    const clip = !galleryExpanded && matchIndex >= GALLERY_LIMIT;
+    card.classList.toggle("is-clipped", clip);
+    matchIndex++;
+  });
+  // показываем кнопку, только если работ больше лимита
+  if (galleryMore) {
+    if (matchIndex > GALLERY_LIMIT) {
+      galleryMore.parentElement.style.display = "";
+      galleryMore.textContent = galleryExpanded ? "Свернуть" : "Показать все (" + matchIndex + ")";
+    } else {
+      galleryMore.parentElement.style.display = "none";
+    }
+  }
+}
+
 filterBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
     filterBtns.forEach((b) => b.classList.remove("is-active"));
     btn.classList.add("is-active");
+    currentFilter = btn.dataset.filter;
+    galleryExpanded = false; // при смене категории сворачиваем обратно
     movePill();
-    const f = btn.dataset.filter;
-    cards.forEach((card) => {
-      const show = f === "all" || card.dataset.category === f;
-      card.classList.toggle("is-hidden", !show);
-    });
+    applyGallery();
   });
 });
 
+if (galleryMore) {
+  galleryMore.addEventListener("click", () => {
+    galleryExpanded = !galleryExpanded;
+    applyGallery();
+    if (!galleryExpanded) scrollToTarget("#works"); // при сворачивании вернуться к началу работ
+  });
+}
+
 // Ставим капельку на место при загрузке и пересчитываем при изменении размера
 movePill();
+applyGallery();
 window.addEventListener("load", movePill);
 window.addEventListener("resize", movePill);
 
