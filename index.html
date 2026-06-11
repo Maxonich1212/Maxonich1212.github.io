@@ -123,49 +123,29 @@
 
       <div class="gallery">
         <!-- КАЖДАЯ КАРТОЧКА = ОДНО ИЗДЕЛИЕ.
-             • data-category="kids" (детская) или "adult" (взрослая)
-             • data-title — подпись изделия
-             • data-photos — список фото этого изделия через запятую (первое = обложка)
-             Сейчас стоят ДЕМО-эскизы из images/demo/. Замените на свои фото из images/. -->
+             • data-category="kids" (детская) / "adult" (взрослая)
+             • data-title — подпись · data-photos — фото изделия (через запятую) -->
 
-        <!-- ДЕМО-карточки (заменятся на настоящие фото) -->
-        <figure class="card" data-scroll-scale data-category="adult"
-                data-title="Вечернее платье"
-                data-photos="images/demo/vzr_plate_1.svg,images/demo/vzr_plate_2.svg">
+        <figure class="card" data-scroll-scale data-category="kids"
+                data-title="Нарядное детское платье"
+                data-photos="images/det_plate.WEBP">
           <div class="card__media">
-            <img loading="lazy" decoding="async" src="images/demo/vzr_plate_1.svg" alt="Вечернее платье" />
+            <img loading="lazy" decoding="async" src="images/det_plate.WEBP" alt="Нарядное детское платье" />
             <div class="card__overlay">
               <span class="card__cta">
                 <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="21" y2="21"/></svg>
                 Смотреть
               </span>
             </div>
-            <span class="card__count">2 фото</span>
           </div>
-          <figcaption>Вечернее платье</figcaption>
+          <figcaption>Нарядное детское платье</figcaption>
         </figure>
 
         <figure class="card" data-scroll-scale data-category="adult"
-                data-title="Пальто, шерсть"
-                data-photos="images/demo/vzr_palto_1.svg,images/demo/vzr_palto_2.svg">
+                data-title="Спортивный костюм"
+                data-photos="images/vzr_kostyum.WEBP">
           <div class="card__media">
-            <img loading="lazy" decoding="async" src="images/demo/vzr_palto_1.svg" alt="Пальто, шерсть" />
-            <div class="card__overlay">
-              <span class="card__cta">
-                <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="21" y2="21"/></svg>
-                Смотреть
-              </span>
-            </div>
-            <span class="card__count">2 фото</span>
-          </div>
-          <figcaption>Пальто, шерсть</figcaption>
-        </figure>
-
-        <figure class="card" data-scroll-scale data-category="adult"
-                data-title="Костюм на заказ"
-                data-photos="images/demo/vzr_kostyum_1.svg">
-          <div class="card__media">
-            <img loading="lazy" decoding="async" src="images/demo/vzr_kostyum_1.svg" alt="Костюм на заказ" />
+            <img loading="lazy" decoding="async" src="images/vzr_kostyum.WEBP" alt="Спортивный костюм" />
             <div class="card__overlay">
               <span class="card__cta">
                 <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="21" y2="21"/></svg>
@@ -173,30 +153,59 @@
               </span>
             </div>
           </div>
-          <figcaption>Костюм на заказ</figcaption>
+          <figcaption>Спортивный костюм</figcaption>
         </figure>
 
         <figure class="card" data-scroll-scale data-category="kids"
-                data-title="Детское платье"
-                data-photos="images/demo/det_plate_1.svg,images/demo/det_plate_2.svg">
+                data-title="Твидовый костюм"
+                data-photos="images/det_zkostum.WEBP">
           <div class="card__media">
-            <img loading="lazy" decoding="async" src="images/demo/det_plate_1.svg" alt="Детское платье" />
+            <img loading="lazy" decoding="async" src="images/det_zkostum.WEBP" alt="Твидовый костюм" />
             <div class="card__overlay">
               <span class="card__cta">
                 <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="21" y2="21"/></svg>
                 Смотреть
               </span>
             </div>
-            <span class="card__count">2 фото</span>
           </div>
-          <figcaption>Детское платье</figcaption>
+          <figcaption>Твидовый костюм</figcaption>
+        </figure>
+
+        <figure class="card" data-scroll-scale data-category="kids"
+                data-title="Школьная рубашка"
+                data-photos="images/det_rubashka.WEBP">
+          <div class="card__media">
+            <img loading="lazy" decoding="async" src="images/det_rubashka.WEBP" alt="Школьная рубашка" />
+            <div class="card__overlay">
+              <span class="card__cta">
+                <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="21" y2="21"/></svg>
+                Смотреть
+              </span>
+            </div>
+          </div>
+          <figcaption>Школьная рубашка</figcaption>
+        </figure>
+
+        <figure class="card" data-scroll-scale data-category="adult"
+                data-title="Летний костюм"
+                data-photos="images/vzr_kostyum2.WEBP">
+          <div class="card__media">
+            <img loading="lazy" decoding="async" src="images/vzr_kostyum2.WEBP" alt="Летний костюм" />
+            <div class="card__overlay">
+              <span class="card__cta">
+                <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="21" y2="21"/></svg>
+                Смотреть
+              </span>
+            </div>
+          </div>
+          <figcaption>Летний костюм</figcaption>
         </figure>
 
         <figure class="card" data-scroll-scale data-category="kids"
                 data-title="Детский костюм"
-                data-photos="images/demo/det_kostyum_1.svg">
+                data-photos="images/det_newkostyum.WEBP">
           <div class="card__media">
-            <img loading="lazy" decoding="async" src="images/demo/det_kostyum_1.svg" alt="Детский костюм" />
+            <img loading="lazy" decoding="async" src="images/det_newkostyum.WEBP" alt="Детский костюм" />
             <div class="card__overlay">
               <span class="card__cta">
                 <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="21" y2="21"/></svg>
@@ -207,11 +216,11 @@
           <figcaption>Детский костюм</figcaption>
         </figure>
 
-        <figure class="card" data-scroll-scale data-category="adult"
-                data-title="Свадебное платье"
-                data-photos="images/demo/vzr_svadebnoe_1.svg">
+        <figure class="card" data-scroll-scale data-category="kids"
+                data-title="Жилет с юбкой"
+                data-photos="images/det_bluza.WEBP">
           <div class="card__media">
-            <img loading="lazy" decoding="async" src="images/demo/vzr_svadebnoe_1.svg" alt="Свадебное платье" />
+            <img loading="lazy" decoding="async" src="images/det_bluza.WEBP" alt="Жилет с юбкой" />
             <div class="card__overlay">
               <span class="card__cta">
                 <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="21" y2="21"/></svg>
@@ -219,7 +228,7 @@
               </span>
             </div>
           </div>
-          <figcaption>Свадебное платье</figcaption>
+          <figcaption>Жилет с юбкой</figcaption>
         </figure>
       </div>
 
