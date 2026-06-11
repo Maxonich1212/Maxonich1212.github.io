@@ -3,3 +3,4 @@
 server.py
 *.md
 images/*.txt
+*.sh
